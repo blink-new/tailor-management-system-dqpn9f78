@@ -6,6 +6,8 @@ import { Orders } from '@/pages/Orders'
 import { NewOrderSimple as NewOrder } from '@/pages/NewOrderSimple'
 import Payments from './pages/Payments'
 import Workers from './pages/Workers'
+import Reports from './pages/Reports'
+import Invoices from './pages/Invoices'
 
 function App() {
   return (
@@ -19,9 +21,8 @@ function App() {
           <Route path="/orders/new" element={<NewOrder />} />
           <Route path="/payments" element={<Payments />} />
           <Route path="/workers" element={<Workers />} />
-          {/* Placeholder routes for future pages */}
-          <Route path="/reports" element={<div className="p-8 text-center">Reports page coming soon...</div>} />
-          <Route path="/invoices" element={<div className="p-8 text-center">Invoices page coming soon...</div>} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/invoices" element={<Invoices />} />
           <Route path="/settings" element={<div className="p-8 text-center">Settings page coming soon...</div>} />
         </Routes>
         <Toaster />
